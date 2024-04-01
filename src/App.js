@@ -7,7 +7,7 @@ export default function App() {
       <div className="container">
      
      <Weather/>
-     <footer> This project was coded by Vanessa Cadalso and is <a href="https://github.com/vcadalso/react-second-try" target="_blank" 
+     <footer> This project was coded by Vanessa Cadalso and is <a href="https://github.com/vcadalso/react-second-try" target="_blank" rel="noreferrer" 
       >open-sourced on GitHub</a> </footer>
       </div>
     </div>
