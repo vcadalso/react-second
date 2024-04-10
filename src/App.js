@@ -6,7 +6,7 @@ export default function App() {
     <div className="App">
       <div className="container">
      
-     <Weather defaultCity="New York"/>
+     <Weather defaultCity="Miami"/>
      <footer> This project was coded by Vanessa Cadalso and is <a href="https://github.com/vcadalso/react-second-try" target="_blank" rel="noreferrer" 
       >open-sourced on GitHub</a> </footer>
       </div>
