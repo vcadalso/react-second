@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WeatherForecast from "./WeatherForecast";
 
 import axios from "axios";
 import "./Weather.css";
@@ -17,7 +18,7 @@ export default function Weather (props) {
         humidity: response.data.main.humidity,
         city: response.data.name,
         description: response.data.weather[0].description,
-        iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png` ,
+        icon: response.data.weather[0].icon,
     });
 }
 
@@ -48,7 +49,7 @@ if (weatherData.ready) {
             <input type="submit" value="Search" className="btn btn-primary w-100"/> </div> </div>
         </form>
         <WeatherInfo data={weatherData} />
-        
+        <WeatherForecast />
         </div>
     )
 } else {
